@@ -15,9 +15,22 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 
 # Menu
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
 	echo -e "เมนูสคริปท์ ${GRAY}MyGatherBK-VPN${NC}"
 	echo ""
@@ -29,7 +42,7 @@ if [[ -e /usr/local/bin/Check-Thai ]]; then
 	echo -e "|${GRAY} 6${NC}| เปลี่ยนวันหมดอายุบัญชีผู้ใช้"
 	echo -e "|${GRAY} 7${NC}| ตั้งค่าเวลารีบูทเซิฟเวอร์อัตโนมัติ"
 	echo -e "|${GRAY} 8${NC}| ทดสอบความเร็วอินเตอร์เน็ต"
-	echo -e "|${GRAY} 9${NC}| -"
+	echo -e "|${GRAY} 9${NC}| User ROOT TO Pass เปลียนรหัสผ่านเซิฟร์เวอร์"
 	echo -e "|${GRAY}10${NC}| ตรวจสอบแบนด์วิดท์"
 	echo -e "|${GRAY}11${NC}| ตรวจสอบแบนด์วิดท์แบบรายชั่วโมง"
 	echo -e "|${GRAY}12${NC}| ตรวจสอบแบนด์วิดท์ต่อบัญชี"
@@ -208,9 +221,22 @@ else
 	echo -e "$CLIENT\n$CLIENT\n"|passwd $CLIENT &> /dev/null
 
 	clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 	echo "ชื่อบัญชี : $CLIENT"
 	echo "หมดอายุในวันที่ : $EXP"
 	echo ""
@@ -240,9 +266,22 @@ fi
 		echo -e "$PASSWORD\n$PASSWORD\n"|passwd $CLIENT &> /dev/null
 
 		clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 		echo "ชื่อบัญชี : $CLIENT"
 		echo "รหัสผ่าน : $PASSWORD"
 		echo "หมดอายุในวันที่ : $EXP"
@@ -269,6 +308,21 @@ fi
 
 	3) # ==================================================================================================================
 
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
 echo ""
 read -p "ชื่อบัญชีที่ต้องการลบ : " CLIENT
 egrep "^$CLIENT" /etc/passwd >/dev/null
@@ -310,9 +364,22 @@ fi
 	4) # ==================================================================================================================
 
 clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 echo ""
 echo "ลำดับ   ชื่อบัญชีผู้ใช้        สถานะ      วันหมดอายุ"
 echo ""
@@ -349,7 +416,22 @@ exit
 
 	5) # ==================================================================================================================
 
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 	read -p "ชื่อบัญชีที่ต้องการเปลี่ยนรหัสผ่าน : " CLIENTNAME
 	egrep "^$CLIENTNAME" /etc/passwd >/dev/null
 
@@ -359,9 +441,22 @@ exit
 		read -p "ยืนยันรหัสผ่านอีกครั้ง : " RETYPEPASSWORD
 
 		if [[ $NEWPASSWORD = $RETYPEPASSWORD ]]; then
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 			echo "ระบบได้ทำการเปลี่ยนรหัสผ่านเรียบร้อยแล้ว"
 			echo ""
 			echo "ชื่อบัญชีผู้ใข้ : $CLIENTNAME"
@@ -394,6 +489,21 @@ exit
 	6) # ==================================================================================================================
 
 echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 read -p "ชื่อบัญชีที่ต้องการเปลี่ยนวันหมดอายุ : " -e CLIENT
 
 if [ $? -eq 0 ]; then
@@ -406,9 +516,22 @@ if [ $? -eq 0 ]; then
 	useradd -e `date -d "$TimeActive days" +"%Y-%m-%d"` -s /bin/false -M $CLIENT
 	EXP="$(chage -l $CLIENT | grep "Account expires" | awk -F": " '{print $2}')"
 	echo -e "$CLIENT\n$CLIENT\n"|passwd $CLIENT &> /dev/null
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 	echo "ชื่อบัญชี : $CLIENT"
 	echo "หมดวันหมดในวันที่ : $EXP"
 	echo ""
@@ -444,9 +567,22 @@ fi
 fi
 
 clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 echo -e "${GRAY}ตั้งค่าเวลารีบูทเซิฟเวอร์อัตโนมัติ ${NC} "
 echo ""
 echo -e "|${GRAY}1${NC}| รีบูททุกๆ  1 ชั่วโมง"
@@ -578,9 +714,65 @@ fi
 	;;
 
 	9) # ==================================================================================================================
-
-	;;
-
+#!/bin/bash
+clear
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-18   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
+echo "             === WELLCOM === "
+echo " ======================================"
+echo "    กำหนดรหัสผ่านสำหรับล็อกอินด้วยชื่อ root  "
+echo " ====================================="
+passwd
+cat > /etc/ssh/sshd_config <<-END
+Port 22
+Port 143
+Port 80
+Protocol 2
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_dsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+UsePrivilegeSeparation yes
+KeyRegenerationInterval 3600
+ServerKeyBits 768
+SyslogFacility AUTH
+LogLevel INFO
+LoginGraceTime 120
+PermitRootLogin yes
+StrictModes yes
+RSAAuthentication yes
+PubkeyAuthentication yes
+IgnoreRhosts yes
+RhostsRSAAuthentication no
+HostbasedAuthentication no
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+X11Forwarding yes
+X11DisplayOffset 10
+PrintMotd no
+PrintLastLog yes
+TCPKeepAlive yes
+Subsystem sftp /usr/lib/openssh/sftp-server
+UsePAM yes
+ClientAliveInterval 120
+ClientAliveCountMax 2
+END
+service ssh restart
+exit
+;;
 
 	10) # ==================================================================================================================
 
@@ -598,11 +790,24 @@ RXTOTAL=$(vnstat -i $INTERFACE | grep "rx:" | awk '{print $2" "substr ($9, 1, 1)
 TXTOTAL=$(vnstat -i $INTERFACE | grep "tx:" | awk '{print $5" "substr ($9, 1, 1)}')
 
 clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 if [[ -e /usr/local/bin/Check-Thai ]]; then
-	echo -e "แบนด์วิดท์ ${GRAY}ZENON-AUTO-VPN${NC}"
+	echo -e "แบนด์วิดท์ ${GRAY}PIRAKIT-VPN${NC}"
 	echo ""
 	echo -e "วันนี้ ${GRAY}$TODAY${NC}"
 	echo -e "เมื่อวานนี้ ${GRAY}$YESTERDAY${NC}"
@@ -619,7 +824,7 @@ if [[ -e /usr/local/bin/Check-Thai ]]; then
 	exit
 
 elif [[ ! -e /usr/local/bin/Check-Thai ]]; then
-	echo -e "BANDWIDTH ${GRAY}ZENON-AUTO-VPN${NC}"
+	echo -e "BANDWIDTH ${GRAY}PIRAKIT-VPN${NC}"
 	echo ""
 	echo -e "TODAY ${GRAY}$TODAY${NC}"
 	echo -e "YESTERDAY ${GRAY}$YESTERDAY${NC}"
@@ -785,6 +990,22 @@ CONRX24=$(echo "scale=2;$RX24 / 1000000" | bc)
 CONTX24=$(echo "scale=2;$TX24 / 1000000" | bc)
 
 clear
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 NOW=`echo -e "${GRAY}เวลาปัจจุบัน${NC}"`
 echo ""
 echo -e "${GRAY}ตัวเลขรับและส่งข้อมูลที่แสดงจะมีหน่วยวัดปริมาณเป็น Gigabyte ทั้งหมด${NC}"
@@ -826,9 +1047,22 @@ if [[ ! -e /usr/local/bin/Banwidth-Per-Client ]]; then
 	wget -O /usr/local/bin/Banwidth-Per-Client "https://raw.githubusercontent.com/MyGatherBk/PURE/master/Banwidth-Per-Client"
 	chmod +x /usr/local/bin/Banwidth-Per-Client
 	clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 	echo -e "Script by ${GRAY}Ekkachai Chompoowiset ${NC}"
 	echo -e "FB Group : ${GRAY}# ${NC}"
 	echo ""
@@ -836,9 +1070,22 @@ if [[ ! -e /usr/local/bin/Banwidth-Per-Client ]]; then
 	echo ""
 else
 	clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 	Banwidth-Per-Client
 	echo ""
 fi
@@ -848,9 +1095,22 @@ fi
 	13) # ==================================================================================================================
 
 clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 echo -e "${GRAY}ปรับเปลี่ยนระบบของเซิฟเวอร์ ${NC} "
 echo ""
 echo -e "|${GRAY}1${NC}| 1 ไฟล์เชื่อมต่อได้ 1 เครื่องเท่านั้น สามารถสร้างไฟล์เพิ่มได้"
@@ -926,9 +1186,22 @@ if [[ ! $CHECKSYSTEM ]]; then
 fi
 
 clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 echo -e "${GRAY}แบนและปลดแบนบัญชีผู้ใช้ ${NC} "
 echo ""
 echo -e "|${GRAY}1${NC}| แบนบัญชีผู้ใช้"
@@ -1008,9 +1281,22 @@ esac
 	15) # ==================================================================================================================
 
 clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 echo -e "${GRAY}ปรับความเร็วอินเตอร์เน็ต ${NC} "
 echo ""
 echo -e "|${GRAY}1${NC}| เปิดใช้งานการปรับแต่งความเร็วอินเทอร์เน็ต"
@@ -1089,9 +1375,22 @@ esac
 	16) # ==================================================================================================================
 
 clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 echo -e "เปิด-ปิด-รีสตาร์ท การทำงานของระบบ ${GRAY}ZENON-AUTO-VPN${NC}"
 echo ""
 echo -e "|${GRAY}1${NC}| OPENVPN"
@@ -1314,9 +1613,22 @@ esac
 	17) # ==================================================================================================================
 
 clear
-	echo ""
-	echo "~¤~ ๏[-ิ_•ิ]๏ ~¤~ Admin MyGatherBK ~¤~ ๏[-ิ_•ิ]๏ ~¤~"
-	echo ""
+echo ""
+echo ""
+echo "               =============== OS-32 & 64-bit =================    "
+echo "               #                                              #    "
+echo "               #       AUTOSCRIPT CREATED BY PIRAKIT          #    "
+echo "               #      -----------About Us------------         #    "
+echo "               #      OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17   #    "
+echo "               #    Truemoney Wallet : 096-746-2978           #    "
+echo "               #               { VPN / SSH }                  #    "
+echo "               #         BY : Pirakit Khawpleum               #    "
+echo "               #    FB : https://m.me/pirakrit.khawplum       #    "
+echo "               #                                              #    "
+echo "               =============== OS-32 & 64-bit =================    "
+echo "                              ไอพีเซิฟ: $IP "
+echo ""
+echo ""
 echo -e "แก้ไขคอนฟิกต่างๆในระบบ ${GRAY}ZENON-AUTO-VPN${NC}"
 echo ""
 echo -e "|${GRAY}1${NC}| OPENVPN ไฟล์ต้นแบบการสร้างคอนฟิก"
