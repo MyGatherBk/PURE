@@ -11,17 +11,7 @@ ________________________________________________________________________________
 - wget https://raw.githubusercontent.com/MyGatherBk/PURE/master/Install && chmod +x Install && bash Install
 
 ____________________________________________________________________________________________________
-# **ตั้งพาส Root โดยใช้คำสั่ง** <br>
 
-sudo -i
-wget https://raw.githubusercontent.com/MyGatherBk/PURE/master/OpenSSH.sh && chmod +x OpenSSH.sh && ./OpenSSH.sh
-
-- sudo -i <br>
-- passwd root<br>
-- Enter new UNIX password:(YOU PASSWORD)<br>
-- Retype new UNIX password:(YOU PASSWORD)<br>
-- passwd:password updated successfully YOU PASSWORD OK<br>
-____________________________________________________________________________________________________
 **ใส่เคดิต  server Messenger http**
 - sudo -i<br>
 - apt-get install nano<br>
