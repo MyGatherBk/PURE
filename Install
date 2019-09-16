@@ -706,10 +706,22 @@ echo -e "${NC} "
 
 	;;
 
-	2) # ==================================================================================================================
+2) # ==================================================================================================================
 
 if [[ -e /etc/openvpn/server.conf ]]; then
 	echo ""
+echo ""
+echo -e "${RED} =============== OS-32 & 64-bit =================    "
+echo -e "${RED} #        AUTOSCRIPT CREATED BY PIRAKIT         #    "
+echo -e "${RED} #      -----------About Us------------         #    "
+echo -e "${RED} #         OS  Debian 9  OS  Ubuntu 16          #    "
+echo -e "${RED} #       Truemoney Wallet : 096-746-2978        #    "
+echo -e "${GREEN} #                { Pritunl }                 #    "
+echo -e "${RED} #         BY : Pirakit Khawpleum               #    "
+echo -e "${RED} #    FB : https://m.me/pirakrit.khawplum       #    "
+echo -e "${RED} =============== OS-32 & 64-bit =================    "
+echo -e "${GREEN} ไอพีเซิฟ: $IP "
+echo -e "${NC} "
 	echo "ไม่สามารถติดตั้ง Pritunl ได้"
 	echo "เนื่องจาก IP นี้ได้ติดตั้ง OpenVPN ที่ควบคุมการใช้งานผ่านเทอร์มินอลไปก่อนหน้านี้แล้ว"
 	echo ""
@@ -718,15 +730,14 @@ fi
 
 # Debian 8
 if [[ "$VERSION_ID" = 'VERSION_ID="8"' ]]; then
-	echo "deb https://repo.mongodb.org/apt/debian jessie/mongodb-org/4.0 main" > /etc/apt/sources.list.d/mongodb-org-4.0.list
-	echo "deb https://repo.pritunl.com/stable/apt jessie main" > /etc/apt/sources.list.d/pritunl.list
-	apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+	echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/3.6 main" > /etc/apt/sources.list.d/mongodb-org-3.6.list
+	echo "deb http://repo.pritunl.com/stable/apt jessie main" > /etc/apt/sources.list.d/pritunl.list
+	apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
 	apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
- apt-get --assume-yes install apt-transport-https
-   apt-get update
-   apt-get --assume-yes install pritunl mongodb-org
- systemctl start mongod pritunl
- systemctl enable mongod pritunl
+	apt-get update
+	apt-get --assume-yes install pritunl mongodb-org
+	systemctl start mongod pritunl
+	systemctl enable mongod pritunl
 
 		while [[ $Squid != "Y" && $NoSquid != "N" ]]; do
 			echo ""
@@ -765,43 +776,28 @@ elif [[ "$VERSION_ID" = 'VERSION_ID="14.04"' ]]; then
 
 # Ubuntu 16.04
 elif [[ "$VERSION_ID" = 'VERSION_ID="16.04"' ]]; then
-sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list << EOF
-deb https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse
-EOF
-
-sudo tee /etc/apt/sources.list.d/pritunl.list << EOF
-deb https://repo.pritunl.com/stable/apt xenial main
-EOF
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-sudo apt-get --assume-yes install apt-transport-https
-sudo apt-get update
-sudo apt-get --assume-yes install pritunl mongodb-org
-sudo systemctl start pritunl mongod
-sudo systemctl enable pritunl mongod
+	echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" > /etc/apt/sources.list.d/mongodb-org-3.6.list
+	echo "deb http://repo.pritunl.com/stable/apt xenial main" > /etc/apt/sources.list.d/pritunl.list
+	apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+	apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+	apt-get update
+	apt-get --assume-yes install pritunl mongodb-org
+	systemctl start pritunl mongod
+	systemctl enable pritunl mongod
 
 		while [[ $Squid != "Y" && $NoSquid != "N" ]]; do
 			echo ""
 			read -p "ต้องการติดตั้ง Squid Proxy หรือไม่ (Y or N) : " -e -i Y Squid
 		done
 
-# Ubuntu 18.04
-elif [[ "$VERSION_ID" = 'VERSION_ID="18.04"' ]]; then
-	sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list << EOF
-deb https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse
-EOF
-
-sudo tee /etc/apt/sources.list.d/pritunl.list << EOF
-deb https://repo.pritunl.com/stable/apt bionic main
-EOF
-
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-sudo apt-get update
-sudo apt-get --assume-yes install pritunl mongodb-server
-sudo systemctl start pritunl mongodb
-sudo systemctl enable pritunl mongodb
+# Ubuntu 17.04
+elif [[ "$VERSION_ID" = 'VERSION_ID="17.04"' ]]; then
+	echo "deb http://repo.pritunl.com/stable/apt zesty main" > /etc/apt/sources.list.d/pritunl.list
+	apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+	apt-get update
+	apt-get --assume-yes install pritunl mongodb-server
+	systemctl start pritunl mongodb
+	systemctl enable pritunl mongodb
 
 		while [[ $Squid != "Y" && $NoSquid != "N" ]]; do
 			echo ""
@@ -817,9 +813,9 @@ echo ""
 echo -e "${RED} =============== OS-32 & 64-bit =================    "
 echo -e "${RED} #        AUTOSCRIPT CREATED BY PIRAKIT         #    "
 echo -e "${RED} #      -----------About Us------------         #    "
-echo -e "${RED} #    OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17     #    "
+echo -e "${RED} #         OS  Debian 9  OS  Ubuntu 16          #    "
 echo -e "${RED} #       Truemoney Wallet : 096-746-2978        #    "
-echo -e "${RED} #               { VPN / SSH }                  #    "
+echo -e "${GREEN} #                { Pritunl }                 #    "
 echo -e "${RED} #         BY : Pirakit Khawpleum               #    "
 echo -e "${RED} #    FB : https://m.me/pirakrit.khawplum       #    "
 echo -e "${RED} =============== OS-32 & 64-bit =================    "
@@ -882,7 +878,7 @@ END
 			/etc/init.d/squid3 restart
 		fi
 
-	elif [[ "$VERSION_ID" = 'VERSION_ID="9"' || "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="18.04"' ]]; then
+	elif [[ "$VERSION_ID" = 'VERSION_ID="9"' || "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="17.04"' ]]; then
 		if [[ -e /etc/squid/squid.conf ]]; then
 			apt-get -y remove --purge squid
 		fi
@@ -934,9 +930,9 @@ echo ""
 echo -e "${RED} =============== OS-32 & 64-bit =================    "
 echo -e "${RED} #        AUTOSCRIPT CREATED BY PIRAKIT         #    "
 echo -e "${RED} #      -----------About Us------------         #    "
-echo -e "${RED} #    OS  DEBIAN 7-8-9  OS  UBUNTU 14-16-17     #    "
+echo -e "${RED} #         OS  Debian 9  OS  Ubuntu 16          #    "
 echo -e "${RED} #       Truemoney Wallet : 096-746-2978        #    "
-echo -e "${RED} #               { VPN / SSH }                  #    "
+echo -e "${GREEN} #                { Pritunl }                 #    "
 echo -e "${RED} #         BY : Pirakit Khawpleum               #    "
 echo -e "${RED} #    FB : https://m.me/pirakrit.khawplum       #    "
 echo -e "${RED} =============== OS-32 & 64-bit =================    "
