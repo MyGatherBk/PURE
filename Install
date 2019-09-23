@@ -29,7 +29,7 @@ if [[ -e /etc/debian_version ]]; then
 	GROUPNAME=nogroup
 	RCLOCAL='/etc/rc.local'
 
-	if [[ "$VERSION_ID" != 'VERSION_ID="7"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="8"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="9"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="14.04"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="16.04"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="17.04"' ]]; then
+	if [[ "$VERSION_ID" != 'VERSION_ID="7"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="8"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="9"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="14.04"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="16.04"' ]] && [[ "$VERSION_ID" != 'VERSION_ID="18.04"' ]]; then
 echo ""
 echo ""
 echo -e "${RED} =============== OS-32 & 64-bit =================    "
@@ -46,7 +46,7 @@ echo -e "${NC} "
 		echo "เวอร์ชั่น OS ของคุณเป็นเวอร์ชั่นที่ยังไม่รองรับ"
 		echo "สำหรับเวอร์ชั่นที่รองรับได้ จะมีดังนี้..."
 		echo ""
-		echo "Ubuntu 14.04 - 16.04 - 17.04"
+		echo "Ubuntu 14.04 - 16.04 - 18.04"
 		echo "Debian 7 - 8 - 9"
 		echo ""
 		exit
@@ -68,7 +68,7 @@ echo -e "${NC} "
 	echo "OS ที่คุณใช้ไม่สามารถรองรับได้กับสคริปท์นี้"
 	echo "สำหรับ OS ที่รองรับได้ จะมีดังนี้..."
 	echo ""
-	echo "Ubuntu 14.04 - 16.04 - 17.04"
+	echo "Ubuntu 14.04 - 16.04 - 18.04"
 	echo "Debian 7 - 8 - 9"
 	echo ""
 	exit
@@ -790,14 +790,22 @@ elif [[ "$VERSION_ID" = 'VERSION_ID="16.04"' ]]; then
 			read -p "ต้องการติดตั้ง Squid Proxy หรือไม่ (Y or N) : " -e -i Y Squid
 		done
 
-# Ubuntu 17.04
-elif [[ "$VERSION_ID" = 'VERSION_ID="17.04"' ]]; then
-	echo "deb http://repo.pritunl.com/stable/apt zesty main" > /etc/apt/sources.list.d/pritunl.list
-	apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
-	apt-get update
-	apt-get --assume-yes install pritunl mongodb-server
-	systemctl start pritunl mongodb
-	systemctl enable pritunl mongodb
+# Ubuntu 18.04
+elif [[ "$VERSION_ID" = 'VERSION_ID="18.04"' ]]; then
+sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list << EOF
+deb https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse
+EOF
+
+sudo tee /etc/apt/sources.list.d/pritunl.list << EOF
+deb http://repo.pritunl.com/stable/apt bionic main
+EOF
+
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+sudo apt-get update
+sudo apt-get --assume-yes install pritunl mongodb-org
+sudo systemctl start pritunl mongod
+sudo systemctl enable pritunl mongod
 
 		while [[ $Squid != "Y" && $NoSquid != "N" ]]; do
 			echo ""
@@ -878,7 +886,7 @@ END
 			/etc/init.d/squid3 restart
 		fi
 
-	elif [[ "$VERSION_ID" = 'VERSION_ID="9"' || "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="17.04"' ]]; then
+	elif [[ "$VERSION_ID" = 'VERSION_ID="9"' || "$VERSION_ID" = 'VERSION_ID="16.04"' || "$VERSION_ID" = 'VERSION_ID="18.04"' ]]; then
 		if [[ -e /etc/squid/squid.conf ]]; then
 			apt-get -y remove --purge squid
 		fi
