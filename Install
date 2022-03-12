@@ -1138,6 +1138,7 @@ refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
 refresh_pattern .               0       20%     4320
 END
 	IP2="s/xxxxxxxxx/$IP/g";
+	service squid3 restart
 	sed -i $IP2 /etc/squid/squid.conf;
 	/etc/init.d/squid restart
 	clear
